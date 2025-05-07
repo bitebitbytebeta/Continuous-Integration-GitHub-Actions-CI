@@ -3,10 +3,11 @@ import unittest
 import sys
 from src.main import add
 
-def test_add():
-    assert add(2, 3) == 5
-    assert add(-1, 1) == 0
-    assert add(0, 0) == 0
+class TestAddingFuncs(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+        self.assertEqual(add(0, 0), 0)
 
     
 if __name__ == "__main__":
