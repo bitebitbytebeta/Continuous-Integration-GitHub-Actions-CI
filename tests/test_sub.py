@@ -5,7 +5,7 @@ from src.sub import sub
 
 class TestSubFuncs(unittest.TestCase):
     def test_sub(self):
-        self.assertEqual(sub(2, 3), 5)
+        self.assertEqual(sub(2, 3), -1)
         self.assertEqual(sub(-1, 1), 0)
         self.assertEqual(sub(0, 0), 0)
 
