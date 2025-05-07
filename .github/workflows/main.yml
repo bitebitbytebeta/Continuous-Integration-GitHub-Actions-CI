@@ -26,4 +26,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest --maxfail=5 --disable-warnings #This option tells pytest to stop executing tests after 5 failures. It’s helpful when running a large suite of tests, as it prevents having to go through all tests if many failures occur early. The number (5 in this case) can be adjusted as needed.
+       python -m unittest discover tests
